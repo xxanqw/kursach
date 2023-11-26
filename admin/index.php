@@ -32,7 +32,7 @@
         </div>
         </nav>
 
-        <div class="button text-center pt-5">
+        <div class="row text-center pt-3 gy-2">
             <button class=" btn btn-primary"><a href="index.php?add_product" class="nav-link text-light">Add product</a></button>
             <button class=" btn btn-primary"><a href="index.php?add_category" class="nav-link text-light">Add category</a></button>
             <button class=" btn btn-primary"><a href="" class="nav-link text-light">Users</a></button>
@@ -41,8 +41,8 @@
             <button class=" btn btn-primary"><a href="" class="nav-link text-light">Orders</a></button>
             <button class=" btn btn-primary"><a href="" class="nav-link text-light">Payments</a></button>
             <button class=" btn btn-danger"><a href="../phpmyadmin" class="nav-link text-light">PHPMyAdmin</a></button>
-
         </div>
+
     </div>
 
     <!-- forms -->
