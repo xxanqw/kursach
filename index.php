@@ -24,7 +24,7 @@ include ('includes/connect.php');
         <!-- navbar -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/"><i class="fa-brands fa-apple" style="color: #000000;"></i> Apple Shop</a>
+                <a class="navbar-brand" href="/"><i class="fa-brands fa-apple"></i> Apple Shop</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -44,7 +44,7 @@ include ('includes/connect.php');
                             while($raw_data=mysqli_fetch_assoc($result_iphone)){
                                 $iphone_title=$raw_data['iphone_title'];
                                 $iphone_id=$raw_data['iphone_id'];
-                                echo "<li><a class='dropdown-item' href='index.php?iphone=$iphone_id'>$iphone_title</a></li>";
+                                echo "<li><a class='dropdown-item' href='?iphone=$iphone_id'>$iphone_title</a></li>";
                             }
                             ?>
                         </ul>
@@ -60,7 +60,7 @@ include ('includes/connect.php');
                             while($raw_data=mysqli_fetch_assoc($result_ipad)){
                                 $ipad_title=$raw_data['ipad_title'];
                                 $ipad_id=$raw_data['ipad_id'];
-                                echo "<li><a class='dropdown-item' href='index.php?ipad=$ipad_id'>$ipad_title</a></li>";
+                                echo "<li><a class='dropdown-item' href='?ipad=$ipad_id'>$ipad_title</a></li>";
                             }
                             ?>
                         </ul>
@@ -76,7 +76,7 @@ include ('includes/connect.php');
                             while($raw_data=mysqli_fetch_assoc($result_mac)){
                                 $mac_title=$raw_data['mac_title'];
                                 $mac_id=$raw_data['mac_id'];
-                                echo "<li><a class='dropdown-item' href='index.php?mac=$mac_id'>$mac_title</a></li>";
+                                echo "<li><a class='dropdown-item' href='?mac=$mac_id'>$mac_title</a></li>";
                             }
                             ?>
                         </ul>
@@ -92,7 +92,7 @@ include ('includes/connect.php');
                             while($raw_data=mysqli_fetch_assoc($result_watch)){
                                 $watch_title=$raw_data['watch_title'];
                                 $watch_id=$raw_data['watch_id'];
-                                echo "<li><a class='dropdown-item' href='index.php?watch=$watch_id'>$watch_title</a></li>";
+                                echo "<li><a class='dropdown-item' href='?watch=$watch_id'>$watch_title</a></li>";
                             }
                             ?>
                         </ul>
@@ -103,7 +103,7 @@ include ('includes/connect.php');
                 </ul>
                 <ul class="navbar-nav me-right mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i> Cart (0)</a>
+                        <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i> Cart (0)</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Login</a>
@@ -138,18 +138,18 @@ include ('includes/connect.php');
         <div class="container mt-5">
         <div class="row justify-content-center gy-2">
             <div class="col-sm">
-                <div class="card">
+                <div class="card h-100">
                 <img src="src/img/15pro.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">iPhone 15 Pro <span class="badge bg-secondary">New</span></h5>
                         <p class="card-text">iPhone 15 Pro and iPhone 15 Pro Max. Titanium design. A17 Pro chip. Action button. 48MP Main camera. USB-C.</p>
-                        <a href="#" class="btn btn-primary">Buy</a>
+                        <a href="#" class="btn btn-primary ">Buy</a>
                         <a href="#" class="btn btn-secondary">More</a>
                     </div>
                 </div>
             </div> 
             <div class="col-sm">
-                <div class="card">
+                <div class="card h-100">
                 <img src="src/img/15.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">iPhone 15 <span class="badge bg-secondary">New</span></h5>
@@ -160,7 +160,7 @@ include ('includes/connect.php');
                 </div>
             </div>
             <div class="col-sm">
-                <div class="card">
+                <div class="card h-100">
                 <img src="src/img/macbookpro.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Macbook Pro</h5>
@@ -171,7 +171,7 @@ include ('includes/connect.php');
                 </div>
             </div>
             <div class="col-sm">
-                <div class="card">
+                <div class="card h-100">
                 <img src="src/img/macmini.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Mac mini</h5>
@@ -182,7 +182,7 @@ include ('includes/connect.php');
                 </div>
             </div>
             <div class="col-sm">
-                <div class="card">
+                <div class="card h-100">
                 <img src="src/img/macbookair.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Macbook Air</h5>

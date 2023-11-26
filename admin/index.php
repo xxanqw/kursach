@@ -13,7 +13,7 @@
 <body>
     <!-- container -->
     <div class="container-fluid p-0">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="/">Apple Shop Admin panel</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,15 +32,33 @@
         </div>
         </nav>
 
-        <div class="row text-center pt-3 gy-2">
-            <button class=" btn btn-primary"><a href="index.php?add_product" class="nav-link text-light">Add product</a></button>
-            <button class=" btn btn-primary"><a href="index.php?add_category" class="nav-link text-light">Add category</a></button>
-            <button class=" btn btn-primary"><a href="" class="nav-link text-light">Users</a></button>
-            <button class=" btn btn-primary"><a href="" class="nav-link text-light">All products</a></button>
-            <button class=" btn btn-primary"><a href="" class="nav-link text-light">All categories</a></button>
-            <button class=" btn btn-primary"><a href="" class="nav-link text-light">Orders</a></button>
-            <button class=" btn btn-primary"><a href="" class="nav-link text-light">Payments</a></button>
-            <button class=" btn btn-danger"><a href="../phpmyadmin" class="nav-link text-light">PHPMyAdmin</a></button>
+        <div class="container-fluid pt-5">
+            <div class="row button text-center pt-3 gy-2 gx-1">
+                <div class="col">
+                    <button class="btn btn-primary w-100 h-100"><a href="index.php?add_product" class="nav-link text-light">Add product</a></button>
+                </div>
+                <div class="col">
+                    <button class="btn btn-primary w-100 h-100"><a href="index.php?add_category" class="nav-link text-light">Add category</a></button>
+                </div>
+                <div class="col">
+                    <button class="btn btn-primary w-100 h-100"><a href="" class="nav-link text-light">Users</a></button>
+                </div>
+                <div class="col">
+                    <button class="btn btn-primary w-100 h-100"><a href="" class="nav-link text-light">All products</a></button>
+                </div>
+                <div class="col">
+                    <button class="btn btn-primary w-100 h-100"><a href="" class="nav-link text-light">All categories</a></button>
+                </div>
+                <div class="col">
+                    <button class="btn btn-primary w-100 h-100"><a href="" class="nav-link text-light">Orders</a></button>
+                </div>
+                <div class="col">
+                    <button class="btn btn-primary w-100 h-100"><a href="" class="nav-link text-light">Payments</a></button>
+                </div>
+                <div class="col">
+                    <button class="btn btn-danger w-100 h-100"><a href="../phpmyadmin" class="nav-link text-light">PHPMyAdmin</a></button>
+                </div>
+            </div>
         </div>
 
     </div>

@@ -4,8 +4,10 @@ include('../includes/connect.php');
 if(isset($_POST['add_cat'])){
     $category_title=$_POST['cat_title'];
     $choose=$_POST['global_category'];
-
-        if($choose=='1'){
+        if($choose==''){
+            echo "<script>alert('Choose an option!')</script>";
+        }
+        elseif($choose=='1'){
         $select_query="select * from `categories` where category_title='$category_title'";
         $result_select=mysqli_query($con,$select_query);
         $number=mysqli_num_rows($result_select);
@@ -89,7 +91,7 @@ if(isset($_POST['add_cat'])){
 <form method="post" class="mb-2 mt-2">
 <div class="input-group w-90 mb-2">
 <select name="global_category" class="form-select" aria-label="Choose other type category">
-  <option selected>Choose</option>
+  <option selected disabled>Choose</option>
   <option value="1">Just a category</option>
   <option value="2">iPhone</option>
   <option value="3">iPad</option>
