@@ -1,16 +1,16 @@
-.logo{
+.logo {
     width: 1.5%;
     height: 1.5%;
     margin-right: 10px;
 }
 
-body{
+body {
     padding-top: 70px;
 }
 
 ::-webkit-scrollbar {
     width: 5px;
-  }
+}
 
 ::-webkit-scrollbar-thumb {
     background-color: #cccccc;

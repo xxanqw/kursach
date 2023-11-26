@@ -1,6 +1,6 @@
 <!-- DATABASE -->
 <?php
-include ('includes/connect.php');
+include('includes/connect.php');
 ?>
 
 
@@ -47,14 +47,14 @@ include ('includes/connect.php');
                                     <hr class="dropdown-divider">
                                 </li>
                                 <?php
-                            $select_iphone="select * from `iphone`";
-                            $result_iphone=mysqli_query($con,$select_iphone);
-                            while($raw_data=mysqli_fetch_assoc($result_iphone)){
-                                $iphone_title=$raw_data['iphone_title'];
-                                $iphone_id=$raw_data['iphone_id'];
-                                echo "<li><a class='dropdown-item' href='?iphone=$iphone_id'>$iphone_title</a></li>";
-                            }
-                            ?>
+                                $select_iphone = "select * from `iphone`";
+                                $result_iphone = mysqli_query($con, $select_iphone);
+                                while ($raw_data = mysqli_fetch_assoc($result_iphone)) {
+                                    $iphone_title = $raw_data['iphone_title'];
+                                    $iphone_id = $raw_data['iphone_id'];
+                                    echo "<li><a class='dropdown-item' href='?iphone=$iphone_id'>$iphone_title</a></li>";
+                                }
+                                ?>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -66,14 +66,14 @@ include ('includes/connect.php');
                                     <hr class="dropdown-divider">
                                 </li>
                                 <?php
-                            $select_ipad="select * from `ipad`";
-                            $result_ipad=mysqli_query($con,$select_ipad);
-                            while($raw_data=mysqli_fetch_assoc($result_ipad)){
-                                $ipad_title=$raw_data['ipad_title'];
-                                $ipad_id=$raw_data['ipad_id'];
-                                echo "<li><a class='dropdown-item' href='?ipad=$ipad_id'>$ipad_title</a></li>";
-                            }
-                            ?>
+                                $select_ipad = "select * from `ipad`";
+                                $result_ipad = mysqli_query($con, $select_ipad);
+                                while ($raw_data = mysqli_fetch_assoc($result_ipad)) {
+                                    $ipad_title = $raw_data['ipad_title'];
+                                    $ipad_id = $raw_data['ipad_id'];
+                                    echo "<li><a class='dropdown-item' href='?ipad=$ipad_id'>$ipad_title</a></li>";
+                                }
+                                ?>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -85,14 +85,14 @@ include ('includes/connect.php');
                                     <hr class="dropdown-divider">
                                 </li>
                                 <?php
-                            $select_mac="select * from `mac`";
-                            $result_mac=mysqli_query($con,$select_mac);
-                            while($raw_data=mysqli_fetch_assoc($result_mac)){
-                                $mac_title=$raw_data['mac_title'];
-                                $mac_id=$raw_data['mac_id'];
-                                echo "<li><a class='dropdown-item' href='?mac=$mac_id'>$mac_title</a></li>";
-                            }
-                            ?>
+                                $select_mac = "select * from `mac`";
+                                $result_mac = mysqli_query($con, $select_mac);
+                                while ($raw_data = mysqli_fetch_assoc($result_mac)) {
+                                    $mac_title = $raw_data['mac_title'];
+                                    $mac_id = $raw_data['mac_id'];
+                                    echo "<li><a class='dropdown-item' href='?mac=$mac_id'>$mac_title</a></li>";
+                                }
+                                ?>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -104,14 +104,14 @@ include ('includes/connect.php');
                                     <hr class="dropdown-divider">
                                 </li>
                                 <?php
-                            $select_watch="select * from `watch`";
-                            $result_watch=mysqli_query($con,$select_watch);
-                            while($raw_data=mysqli_fetch_assoc($result_watch)){
-                                $watch_title=$raw_data['watch_title'];
-                                $watch_id=$raw_data['watch_id'];
-                                echo "<li><a class='dropdown-item' href='?watch=$watch_id'>$watch_title</a></li>";
-                            }
-                            ?>
+                                $select_watch = "select * from `watch`";
+                                $result_watch = mysqli_query($con, $select_watch);
+                                while ($raw_data = mysqli_fetch_assoc($result_watch)) {
+                                    $watch_title = $raw_data['watch_title'];
+                                    $watch_id = $raw_data['watch_id'];
+                                    echo "<li><a class='dropdown-item' href='?watch=$watch_id'>$watch_title</a></li>";
+                                }
+                                ?>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -227,7 +227,7 @@ include ('includes/connect.php');
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-    </script>
+        </script>
 </body>
 
 </html>

@@ -1,20 +1,19 @@
 <!-- add to database -->
 <?php
 include('../includes/connect.php');
-if(isset($_POST['add_prod'])){
-    $product_title=$_POST['prod_title'];
+if (isset($_POST['add_prod'])) {
+    $product_title = $_POST['prod_title'];
 
     //check if present
-    $select_query="select * from `products` where product_title='$product_title'";
-    $result_select=mysqli_query($con,$select_query);
-    $number=mysqli_num_rows($result_select);
-    if($number>0){
+    $select_query = "select * from `products` where product_title='$product_title'";
+    $result_select = mysqli_query($con, $select_query);
+    $number = mysqli_num_rows($result_select);
+    if ($number > 0) {
         echo "<script>alert('This item is present')</script>";
-    }
-    else{
-        $insert_query="insert into `products` (product_title) values ('$product_title')";
-        $result=mysqli_query($con,$insert_query);
-        if($result){
+    } else {
+        $insert_query = "insert into `products` (product_title) values ('$product_title')";
+        $result = mysqli_query($con, $insert_query);
+        if ($result) {
             echo "<script>alert('Added Sucessfully')</script>";
         }
     }
