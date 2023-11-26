@@ -23,11 +23,12 @@ if(isset($_POST['add_prod'])){
 
 <!-- adding form -->
 <form method="post" class="mb-2 mt-2">
-<div class="input-group w-90 mb-2">
-    <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-list" style="color: #000000;"></i></span>
-    <input type="text" class="form-control" name="prod_title" placeholder="Add Products" aria-describeby="basic-addon1">
-</div>
-<div class="input-group w-10 mb-2 m-auto">
-    <input type="submit" name="add_prod" value="Add Product" class="btn btn-primary">
-</div>
+    <div class="input-group w-90 mb-2">
+        <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-list" style="color: #000000;"></i></span>
+        <input type="text" class="form-control" name="prod_title" placeholder="Add Products"
+            aria-describeby="basic-addon1">
+    </div>
+    <div class="input-group w-10 mb-2 m-auto">
+        <input type="submit" name="add_prod" value="Add Product" class="btn btn-primary">
+    </div>
 </form>

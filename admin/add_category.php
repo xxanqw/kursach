@@ -89,21 +89,22 @@ if(isset($_POST['add_cat'])){
 <!-- adding form -->
 
 <form method="post" class="mb-2 mt-2">
-<div class="input-group w-90 mb-2">
-<select name="global_category" class="form-select" aria-label="Choose other type category">
-  <option selected disabled>Choose</option>
-  <option value="1">Just a category</option>
-  <option value="2">iPhone</option>
-  <option value="3">iPad</option>
-  <option value="4">Mac</option>
-  <option value="5">Watch</option>
-</select>
-</div>
-<div class="input-group w-90 mb-2">
-    <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-list" style="color: #000000;"></i></span>
-    <input type="text" class="form-control" name="cat_title" placeholder="Add Categories" aria-describeby="basic-addon1">
-</div>
-<div class="input-group w-10 mb-2 m-auto">
-    <input type="submit" name="add_cat" value="Add Category" class="btn btn-primary">
-</div>
+    <div class="input-group w-90 mb-2">
+        <select name="global_category" class="form-select" aria-label="Choose other type category">
+            <option selected disabled>Choose</option>
+            <option value="1">Just a category</option>
+            <option value="2">iPhone</option>
+            <option value="3">iPad</option>
+            <option value="4">Mac</option>
+            <option value="5">Watch</option>
+        </select>
+    </div>
+    <div class="input-group w-90 mb-2">
+        <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-list" style="color: #000000;"></i></span>
+        <input type="text" class="form-control" name="cat_title" placeholder="Add Categories"
+            aria-describeby="basic-addon1">
+    </div>
+    <div class="input-group w-10 mb-2 m-auto">
+        <input type="submit" name="add_cat" value="Add Category" class="btn btn-primary">
+    </div>
 </form>
