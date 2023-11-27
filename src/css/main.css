@@ -15,3 +15,7 @@ body {
 ::-webkit-scrollbar-thumb {
     background-color: #cccccc;
 }
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #a1a1a1;
+}
